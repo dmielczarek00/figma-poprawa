@@ -1,26 +1,158 @@
 *{margin:0;padding:0;}
 
 header{
-    position:absolute;
     width: 100%;
     height: 55px;
     background-color: #0088FF;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+p{
+    width: 65px;
+    color: rgba(0,0,0,1);
+    top: 6.5px;
+    left: 13px;
+    font-family: Lato;
+    font-weight: Regular;
+    font-size: 13px;
+    opacity: 1;
+    text-align: left;
 }
 
 #logo{
-    position:absolute;
-    left: 2%;
-    right: 1.72%;
-    top: 17.45%;
-    bottom: 3.07%;
+    float:left;
+    width: 192px;
+    height: 41px;
+    background-size: cover;
+    margin-top:9px;
+    margin-left:4px;
 }
 
 .kt{
-    position:absolute;
+    float:left;
     width: 90px;
     height: 30px;
-    left: 253px;
-    top: 12px;
-    background: #FFFFFF;
+    background-color: white;
     border-radius: 20px;
+    margin-left:30px;
+}
+
+.kt2{
+    display:block;
+    margin: auto;
+    margin-top:25px;
+    width: 146px;
+    height:35px;
+    background-color: #0088FF;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    font-size:20px;
+    text-align: center;
+}
+
+#burger{
+    float:left;
+    margin:auto;
+    width: 36px;
+    height: 21px;
+    background-color: black;
+    margin-left:100px;
+}
+
+section{
+    width:100%;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+section p{
+    margin:auto;
+    width: 253px;
+    color: rgba(51,51,51,1);
+    font-family: Lato;
+    font-weight: Regular;
+    font-size: 30px;
+    text-align: center;
+}
+
+section p:nth-of-type(even){
+    width: 340px;
+    margin-top:25px;
+    color: rgba(51,51,51,1);
+    font-size: 16px;
+    text-align: left;
+}
+
+section:nth-of-type(even){
+    background-color: rgba(0,136,255,1);
+}
+
+section:nth-of-type(even) p{
+    color: white;
+}
+
+img{
+    margin:auto;
+    width: 407px;
+    height: 196px;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
+}
+
+.opinia{
+    width: 350px;
+    height: 114px;
+    margin-left: 40px;
+    margin-top: 25px;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.opinia p{
+    text-align: left;
+    width: 300px;
+    font-size: 20px;
+}
+
+.opinia :nth-child(even){
+    font-size:18px;
+}
+
+.opinia img{
+    float:left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+input{
+    display: block;
+    margin:auto;
+    margin-top:25px;
+    width:331px;
+    height:49px;
+    font-size:22px;
+    border: 1px solid black;
+}
+
+#wyslij{
+    width:137px;
+    height:40px;
+    background: #00AAFF;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    color:white;
+}
+
+a{
+    margin-top:25px;
+    text-decoration: none;
+    color:white;
+    font-size:12px;
 }
