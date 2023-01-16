@@ -1,5 +1,17 @@
 *{margin:0;padding:0;}
 
+a{
+    color: rgba(0,0,0,1);
+    font-family: Lato;
+    font-weight: Regular;
+    text-align: left;
+}
+
+main{
+    width:430px;
+    margin:auto;
+}
+
 header{
     width: 100%;
     height: 55px;
@@ -10,7 +22,7 @@ header{
 }
 
 header a{
-    opacity:0;
+    display:none;
 }
 
 footer{
@@ -43,7 +55,7 @@ p{
     margin-left:38px;
     border:none;
     border-radius: 20px;
-    margin-top:-5px;
+    margin-top:12px;
 }
 
 .kt2{
@@ -67,6 +79,7 @@ p{
     margin-right:14px;
     width: 36px;
     height: 21px;
+    margin-top:18px;
 }
 .k{
     margin-top:3px;
@@ -137,20 +150,29 @@ img{
     text-align: left;
     width: 300px;
     font-size: 20px;
+    margin-top:5px;
 }
 
 .opinia :nth-child(even){
-    font-size:18px;
+    font-size:20px;
+    width:auto;
 }
 
 .opinia img{
     float:left;
-    margin-left:25px;
-    margin-right:12px;
-    margin-top:10px;
+    margin:0;
     width: 40px;
     height: 40px;
     border-radius: 100px;
+    margin-right:15px;
+}
+
+.u{
+    float:left;
+    margin-left:15px;
+    height:40px;
+    padding:10px;
+    width:300px !important;
 }
 
 input{
@@ -197,6 +219,9 @@ footer p{
 
 
 @media screen and (min-width: 1440px) {
+    main{
+        width:1440px;
+    }
     header{
         width: 100%;
         height: 122px;
@@ -209,7 +234,7 @@ footer p{
     header a{
         float:left;
         margin-left:133px;
-        opacity:1;
+        display:block;
         margin-top:39px;
         font-size:30px;
     }
@@ -264,7 +289,7 @@ footer p{
     }
     
     #burger{
-        opacity:0;
+        display:none;
     }
 
     section{
@@ -355,26 +380,31 @@ footer p{
     }
     
     .opinia p{
+        float:left;
         text-align: left;
-        width: 300px;
         font-size: 20px;
         margin-left:25px;
         margin-top:10px;
+    }
+
+    .u{
+        float:left;
+        margin-left:15px;
+        height:40px;
+        padding:10px;
+        width:300px !important;
     }
     
     .opinia p:nth-child(even){
         float: left;
         font-size:18px;
-        margin-top:5px;
-        margin-left: 10px;
+        margin-left: 0;
+        margin-top:8px !important;
     }
     
     .opinia img{
-        position: absolute;
-        float:left;
-        margin-left:25px;
-        margin-right:12px;
-        margin-top:10px;
+        float:left !important;
+        margin:0;
         width: 40px;
         height: 40px;
         border-radius: 100px;
@@ -382,21 +412,24 @@ footer p{
     
     #kontakt{
         display:block;
+        height:auto;
+        padding-bottom:20px;
     }
 
     #kontakt p{
-        width:auto;
         text-align: center;
+        width:100%;
+        margin:0;
         float:left;
-        justify-content: center;
     }
 
     input{
+        padding:15px;
         display: block;
         margin:auto;
         margin-top:25px;
-        width:752px;
-        height:62px;
+        width:737px;
+        height:47px;
         font-size:22px;
         border: 1px solid black;
     }
@@ -440,6 +473,9 @@ footer p{
   }
 
   @media screen and (min-width: 1080px) and (max-width: 1439px) {
+    main{
+        width:1080px;
+    }
     header{
         width: 100%;
         height: 91px;
@@ -452,7 +488,7 @@ footer p{
     header a{
         float:left;
         margin-left:100px;
-        opacity:1;
+        display:block;
         margin-top:30px;
         font-size:22.5px;
     }
@@ -507,7 +543,7 @@ footer p{
     }
     
     #burger{
-        opacity:0;
+        display:none;
     }
 
     section{
@@ -598,26 +634,32 @@ footer p{
     }
     
     .opinia p{
+        float:left;
         text-align: left;
-        width: 225px;
-        font-size: 15px;
+        font-size: 16px;
         margin-left:18px;
         margin-top:7px;
+        width:290px;
+    }
+
+    .u{
+        float:left;
+        margin-left:15px;
+        height:30px;
+        padding:7px;
+        width:225px !important;
     }
     
     .opinia p:nth-child(even){
         float: left;
         font-size:13px;
-        margin-top:4px;
-        margin-left: 7px;
+        margin-left: 0;
+        margin-top:8px !important;
     }
     
     .opinia img{
-        position: absolute;
-        float:left;
-        margin-left:18px;
-        margin-right:9px;
-        margin-top:7px;
+        float:left !important;
+        margin:0;
         width: 30px;
         height: 30px;
         border-radius: 100px;
@@ -625,10 +667,12 @@ footer p{
     
     #kontakt{
         display:block;
+        padding-bottom:15px;
     }
 
     #kontakt p{
-        width:auto;
+        width:100%;
+        margin:0;
         text-align: center;
         float:left;
         justify-content: center;
@@ -638,8 +682,9 @@ footer p{
         display: block;
         margin:auto;
         margin-top:18px;
-        width:564px;
-        height:46px;
+        padding:10px;
+        width:554px;
+        height:36px;
         font-size:16px;
         border: 1px solid black;
     }
